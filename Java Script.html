@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+
+
+
+
+<TITLE>Customer Information</TITLE>
+<link rel="stylesheet" type="text/css" href="cssfile.css">
+ 
+
+</HEAD>
+
+
+
+
+<BODY>
+
+
+<H1><span style="color: red;">Customer Information</span></H1>
+	<form>
+
+
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+
+<H3>User first name:<br></H3>
+<input type="text" name="firstname" value="">
+<br>
+
+<H3>User last name:<br></H3>
+<input type="text" name="lastname" value="">
+<br>
+
+
+<H3>User email:<br></H3>
+<input type="text" name="email" value="">
+<br><br>
+
+<input type="submit" value="Submit Data">
+
+</form>
+
+
+
+<script>
+function myFunction() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("User first name, User last name, and User email must all be typed");
+    return false;
+  }
+}
+</script>
+
+
+</form>
+</BODY>
+</HTML>
